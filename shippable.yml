@@ -1,2 +1,9 @@
 script:
   - true
+
+env:
+  global:
+    - APP_NAME=shippable-heroku-test
+
+after_succes :
+  - git push -f git@heroku.com:$APP_NAME.git master
