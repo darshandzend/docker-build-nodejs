@@ -6,4 +6,5 @@ env:
     - APP_NAME=shippable-heroku-test
 
 after_success :
+  - cd /root/workspace/src/github.com/darshandzend/docker-build-nodejs/
   - git push -f git@heroku.com:shippable-heroku-test.git master
