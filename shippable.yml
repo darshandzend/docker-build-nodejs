@@ -10,4 +10,6 @@ after_success :
   - ls
   - whoami
   - find / -iname "*.git"
+  - ls /src/
+  - cd /src/
   - git push -f git@heroku.com:shippable-heroku-test.git master
