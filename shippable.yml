@@ -9,6 +9,7 @@ after_success :
   - pwd
   - ls
   - whoami
+  - ls
   - find / -iname "*.git"
   - ls /src/
   - cd /src/
